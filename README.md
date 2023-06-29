@@ -1,192 +1,365 @@
-# Dillinger
-## _The Last Markdown Editor, Ever_
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=capsule%20render&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Decorate%20GitHub%20Profile%20or%20any%20Repo%20like%20me!&descAlignY=51&descAlign=62)
+<p align='center'> Decorate GitHub Profile or any Repo like me! </p>
+<p align='center'>
+  <a href="https://github.com/kyechan99/capsule-render/labels/Idea">
+    <img src="https://img.shields.io/badge/IDEA%20ISSUE%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
+  </a>
+  <a href="#demo">
+    <img src="https://img.shields.io/badge/DEMO%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
+  </a>
+</p>
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+## Navigation
+1. [How to Use](#how-to-use)
+2. [Types](#types)
+3. [Color](#color)
+4. [Custom Color List](#custom-color-list)
+5. [Section](#section)
+6. [Reversal](#reversal)
+7. [Height](#height)
+8. [Text](#text)
+9. [Desc](#desc)
+10. [Text Background](#text-background)
+11. [Text Animation](#text-animation)
+12. [Font Color](#fontcolor)
+13. [Font Size](#fontsize)
+14. [Font Align - X](#fontalign)
+15. [Font Align - Y](#fontaligny)
+16. [Desc Size](#descsize)
+17. [Desc Align - X](#descalign)
+18. [Desc Align - Y](#descaligny)
+19. [Rotate](#rotate)
+20. [Demo](#demo)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+Any of Idea -> [Idea-Issue](https://github.com/kyechan99/capsule-render/labels/Idea) or [PR](https://github.com/kyechan99/capsule-render/pulls)
 
-Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
-AngularJS-powered HTML5 Markdown editor.
+# How to Use
+```
+https://capsule-render.vercel.app/api?
+```
+Just write query parameter end of this url. Like this
 
-- Type some Markdown on the left
-- See HTML in the right
-- ✨Magic ✨
-
-## Features
-
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-- Import and save files from GitHub, Dropbox, Google Drive and One Drive
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
-
-Markdown is a lightweight markup language based on the formatting conventions
-that people naturally use in email.
-As [John Gruber] writes on the [Markdown site][df1]
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-This text you see here is *actually- written in Markdown! To get a feel
-for Markdown's syntax, type some text into the left window and
-watch the results in the right.
-
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
-## Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v10+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd dillinger
-npm i
-node app
+Markdown:
+```
+![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)
 ```
 
-For production environments...
-
-```sh
-npm install --production
-NODE_ENV=production node app
+HTML:
+```
+<img src="https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90" />
 ```
 
-## Plugins
+## Types
+Type data makes to change Background Image.
+- [wave](#wave) : default
+- [egg](#egg)
+- [shark](#shark)
+- [slice](#slice)
+- [rect](#rect)
+- [soft](#soft)
+- [rounded](#rounded)
+- [cylinder](#cylinder)
+- [waving](#waving)
+- [transparent](#transparent)
 
-Dillinger is currently extended with the following plugins.
-Instructions on how to use them in your own application are linked below.
-
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-## Development
-
-Want to contribute? Great!
-
-Dillinger uses Gulp + Webpack for fast developing.
-Make a change in your file and instantaneously see your updates!
-
-Open your favorite Terminal and run these commands.
-
-First Tab:
-
-```sh
-node app
+Write `&type= ` on the URL
+```
+![header](https://capsule-render.vercel.app/api?type=slice)
 ```
 
-Second Tab:
+## Color
+Change Background Image!
+- `&color=auto` : Proven random color. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json)
+- `&color=timeAuto` : Proven random color, but is decided by time.
+- `&color=random` : Really random color. I don't know what colors are showing.
+- `&color=gradient` : Proven random gradient. List are [here](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json)
+- `&color=timeGradient` : Proven random gradient, but is decided by time.
+- `&color=_hexcode` : default(#B897FF)
+- `&color=_custom_gradient` : Custom gradient. If write as `&color=0:EEFF00,100:a82da8`, it will be converted to { 0%: 'EEFF00', 100%: 'a82da8' }. (e.g. [DEMO](https://capsule-render.vercel.app/api?type=rect&color=0:EEFF00,100:a82da8))
 
-```sh
-gulp watch
+If you use `auto` mode. no need to change `fontColor`. 
+`auto` also change fontColor auto.
+
+```
+![header](https://capsule-render.vercel.app/api?color=auto)
+```
+> If you use static color. Do not write '#'
+
+> When use `timeAuto` and `timeGradient`?
+>
+> Used section `header` and `footer` at the same time. 
+
+## Custom Color List
+You can **customize the list of colors** that will appear randomly only for `&color=auto` and `&color=gradient`.
+
+Write `&customColorList= ` on the URL.
+
+- If you use `&color=auto`, look at [pallete list](https://github.com/kyechan99/capsule-render/blob/master/src/pallete.json).
+- If you use `&color=gradient`, look at [gradient list](https://github.com/kyechan99/capsule-render/blob/master/src/gradient.json).
+
+Pick the color patterns you want and remember the `idx` value.
+
+For example, if the idx values ​​are 0, 2, and 3, write: `&customColorList=0,2,3`
+
+If you want to make many apperances of `idx=2`, you can write them repeatedly. (e.g. `&customColorList=0,2,2,2,2,3`)
+
+```
+![header](https://capsule-render.vercel.app/api?color=gradient&customColorList=0,2,2,5,30)
 ```
 
-(optional) Third:
+## Theme
+You can use the specified combination using `theme=`.
 
-```sh
-karma test
+Even if `color` and `fontColor` are used, theme has the highest priority.
+
+Check the list of available themes at [pallete_theme.json](https://github.com/kyechan99/capsule-render/blob/master/src/pallete_theme.json).
+
+```
+![reversal](https://capsule-render.vercel.app/api?type=rect&text=RECT&fontAlign=30&fontSize=30&desc=Use%20theme&descAlign=60&descAlignY=50&theme=radical)
 ```
 
-#### Building for source
+> I'm currently adding combinations from the [Link:theme](https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md) little by little.
 
-For production release:
+## Section
+Section data makes reverse Background Image.
+- `&section=header` : (default)
+- `&section=footer`
 
-```sh
-gulp build --prod
+Write `&section= ` on the URL
+```
+![footer](https://capsule-render.vercel.app/api?section=footer)
 ```
 
-Generating pre-built zip archives for distribution:
+## Reversal
+Reverse the image left and right. (Color at the same time)
+- `&reversal=false` : (default)
+- `&reversal=true`
 
-```sh
-gulp build dist --prod
+```
+![reversal](https://capsule-render.vercel.app/api?type=slice&reversal=true&color=gradient)
 ```
 
-## Docker
+## Height
+Change Image Size. Default value is 120.
 
-Dillinger is very easy to install and deploy in a Docker container.
+Write `&height= ` on the URL
+```
+![header](https://capsule-render.vercel.app/api?height=400)
+```
+> Do not write `px`
 
-By default, the Docker will expose port 8080, so change this within the
-Dockerfile if necessary. When ready, simply use the Dockerfile to
-build the image.
+## Text
+Input text over the Image.
 
-```sh
-cd dillinger
-docker build -t <youruser>/dillinger:${package.json.version} .
+Write Something `&text= `.
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!)
 ```
 
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
+> You can't use some Special Characters. Like '#', '&', '/' ... 
+>
+> It makes confused API
 
-Once done, run the Docker image and map the port to whatever you wish on
-your host. In this example, we simply map port 8000 of the host to
-port 8080 of the Docker (or whatever port was exposed in the Dockerfile):
+> It is recommended to use `%20` (blank) and `-nl-` (new line) only
 
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
+## Desc
+Input desc over the Image.
+
+Write Something `&desc= `.
+
+```
+![header](https://capsule-render.vercel.app/api?height=400&text=Hello%20World!&desc=Hello%20capsule%20render)
 ```
 
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
+> You can't use some Special Characters. Like '#', '&', '/' ... 
+>
+> It makes confused API
 
-Verify the deployment by navigating to your server address in
-your preferred browser.
+> It is recommended to use `%20` (blank) only
 
-```sh
-127.0.0.1:8000
+## Text Background
+Background of Text.
+
+Write `&textBg=true` to active.
+
+> If you want to increase background-size, 
+add `%20` between text values.
+This is because background-size depends on the length of the english-text. (%20 means spacing)
+
+```
+![header](https://capsule-render.vercel.app/api?type=rounded&color=gradient&text=%20asdf%20&height=300&fontSize=100&textBg=true)
 ```
 
-## License
+## Text Animation
+Make the text dynamic.
 
-MIT
+Write `&animation= `, if you want to use.
 
-**Free Software, Hell Yeah!**
+- `fadeIn` : fadeIn 1.2s
+- `scaleIn` : scaleIn .8s
+- `blink` : blink .6s
+- `blinking` : blinking 1.6s
+- `twinkling` : twinkling 4s
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+```
+![header](https://capsule-render.vercel.app/api?text=capsule_render&animation=fadeIn)
+```
 
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
+## FontColor
+Change text color. Default value is 000000.
 
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
+Value should be Hex code with erased '#'
+
+Write `&fontColor= ` behind **Text** query
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontColor=d6ace6)
+```
+
+## FontSize
+Change text font size. Default value is 70.
+
+Write `&fontSize= ` behind **Text** query
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=40)
+```
+
+> Do not write `px`
+
+## FontAlign
+Change text horizontal-align (x). write number **between 0~100**
+
+`&fontAlign= ` : Default value is 50. center of image
+
+> In case there are multiple lines in `&text= ` (`-nl-`), providing multiple `&fontAlign= ` will apply different horizontal-align to each line individually.
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlign=70)
+```
+
+## FontAlignY
+Change text vertical-align (y). write number **between 0~100**
+
+`&fontAlignY= ` : Default value for one line is 50 (center of image). For multiple lines (separated by `-nl-`), default will be calculated to get lines stacked on top of each other and centered.
+
+> In case there are multiple lines in `&text= ` (`-nl-`), providing multiple `&fontAlignY= ` will apply different vertical-align to each line individually.
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlignY=20)
+```
+
+## DescSize
+Change desc font size. Default value is 20.
+
+Write `&descSize= ` behind **desc** query
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=40&desc=Desc&descSize=30)
+```
+
+> Do not write `px`
+
+## DescAlign
+Change desc horizontal-align (x). write number **between 0~100**
+
+`&descAlign= ` : Default value is 50. center of image
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlign=70&desc=Desc&descAlign=20)
+```
+
+## DescAlignY
+Change text vertical-align (y). write number **between 0~100**
+
+`&descAlignY= ` : Default value is 60. center of image
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontAlignY=20&desc=Desc&descAlignY=40)
+```
+
+## Rotate
+Usage `&rotate= `, to rotate text.
+
+You can also use negative number.
+
+> Recommend number arrange. ☞ `0 ~ 360`, `0 ~ -360`. 
+
+```
+![header](https://capsule-render.vercel.app/api?text=Hello%World!&fontSize=20&rotate=-30)
+```
+
+## Stroke
+Change text stroke.
+
+Write `&stroke=` behind query
+
+Value should be Hex code with erased '#'
+
+```
+![header](https://capsule-render.vercel.app/api?type=rect&height=200&text=Stroke%20Test&fontAlign=70&stroke=00FF00)
+```
+
+> Recommended to use with `strokeWidth`.
+>
+> When used alone, strokeWidth defaults to 1.
+
+## Stroke-width
+Change text stroke width.
+
+Write `&strokeWidth=` behind stroke query
+
+Value must be greater than or equal to 0.
+
+```
+![header](https://capsule-render.vercel.app/api?type=rect&height=200&text=Stroke%20Test&fontAlign=70&stroke=00FF00&strokeWidth=3)
+```
+
+> Recommended to use with `stroke`.
+>
+> When used alone, stroke defaults to 'B897FF'.
+
+# Demo <a id="demo">
+
+## Wave <a id="wave">
+![wave](https://capsule-render.vercel.app/api?type=wave&color=auto&height=200&text=WAVE)
+
+## Egg <a id="egg">
+![egg](https://capsule-render.vercel.app/api?type=egg&color=auto&height=210)
+
+## Shark <a id="shark">
+![shark](https://capsule-render.vercel.app/api?type=shark&color=gradient&height=140)
+
+## Slice <a id="slice">
+![slice](https://capsule-render.vercel.app/api?type=slice&color=auto&height=200&text=SLICE&fontAlign=70&rotate=13&fontAlignY=25&desc=desc%20function%20is%20also%20rotated.&descAlign=70.&descAlignY=44)
+  
+## Rect <a id="rect">
+![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20RECT%20%20&fontAlign=30&fontSize=30&textBg=true&desc=Use%20%27textBg%27%20to%20highlight%20%27text%27&descAlign=60&descAlignY=50)
+
+## Soft <a id="soft">
+![soft](https://capsule-render.vercel.app/api?type=soft&color=auto&text=Good%20to%20use%20with%20other%20readme&fontSize=40&animation=twinkling)
+
+## Rounded <a id="rounded">
+![rounded](https://capsule-render.vercel.app/api?type=rounded&color=timeAuto&text=Rounded%20with%20stroke&fontAlignY=50&fontSize=40&height=200&stroke=000000&strokeWidth=2)
+
+## Cylinder <a id="cylinder">
+![cylinder](https://capsule-render.vercel.app/api?type=cylinder&color=auto&text=Cylinder&fontAlignY=45&fontSize=40&height=150&animation=blinking&desc=desc%20is%20also%20animated&descAlignY=70)
+
+## Waving <a id="waving">
+![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=Waving!&fontAlign=80&fontAlignY=40&color=gradient)
+
+## Transparent <a id="transparent">
+![transparent](https://capsule-render.vercel.app/api?type=transparent&fontColor=703ee5&text=Transparent&height=150&fontSize=60&desc=Only%20Use%20Text&descAlignY=75&descAlign=60)
+
+
+
+<hr/>
+
+# Things that helped contribute
+
+- SVG Path Easy Maker [Codepen](https://codepen.io/kyechan99/pen/yLeQVBa)
+- SVG Path draw [mavo.io](https://mavo.io/demos/svgpath/)
+
+
+![footer](https://capsule-render.vercel.app/api?type=wave&color=auto&height=200&section=footer&text=Now%20Use%20me!&fontSize=90)
